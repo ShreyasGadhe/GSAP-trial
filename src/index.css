@@ -3,15 +3,57 @@ body {
   padding: 0;
   max-height: 100vh;
 }
+
+.hero {
+  margin: 0;
+  background-color: rgb(17, 13, 13);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  z-index: 5;
+  position: relative;
+  overflow: hidden;
+}
+.glass {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  backdrop-filter: blur(100px);
+  z-index: 3;
+}
+.hero-cursor {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  background-color: rgba(255, 0, 0, 0.466);
+}
+.hero h1 {
+  margin: 0;
+  z-index: 5;
+  align-self: center;
+  font-size: x-large;
+  color: antiquewhite;
+}
 .world {
   background-color: rgb(57, 51, 51);
   height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .cursor {
   width: 300px;
   opacity: 50%;
-
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
   z-index: 0;
 }
 
@@ -21,7 +63,8 @@ body {
   width: 20vw;
   margin: 20px;
   border-radius: 15px;
-  background: linear-gradient(to right bottom, bisque, rgb(235, 175, 103));
+  backdrop-filter: blur(10px);
+  border: 2px solid rgb(125, 119, 119);
 }
 .card:hover {
   scale: 1.1;
@@ -33,4 +76,5 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  position: absolute;
 }
