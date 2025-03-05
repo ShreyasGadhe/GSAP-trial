@@ -23,7 +23,11 @@ body {
   color: antiquewhite;
   text-align: center;
 }
-
+.links a {
+  margin: 20px;
+  fill: antiquewhite;
+  stroke: antiquewhite;
+}
 .pfp {
   height: 250px;
   justify-self: center;
