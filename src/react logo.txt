@@ -1,0 +1,24 @@
+// useGSAP code
+useGSAP(() => {
+    gsap.from(reactLogoRef.current, {
+      left: 0,
+      duration: 10,
+      delay: 0.5,
+      ease: "power3.inOut",
+      repeat: 2,
+      rotation: 360,
+      repeatDelay: 1,
+      yoyo: true,
+    });
+  }, []);
+
+// img element png
+
+  <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png"
+        className="react-logo"
+        ref={reactLogoRef}
+      />
+
+// logo ref
+    const reactLogoRef = useRef();
