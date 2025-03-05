@@ -10,7 +10,7 @@ body {
   height: 100vh;
   display: flex;
   justify-content: center;
-  z-index: 5;
+
   position: relative;
   overflow: hidden;
 }
@@ -77,4 +77,12 @@ body {
   align-items: center;
   flex-direction: row;
   position: absolute;
+}
+
+.react-logo {
+  position: absolute;
+  top: -200;
+  right: 0;
+  z-index: 4;
+  height: 180px;
 }
