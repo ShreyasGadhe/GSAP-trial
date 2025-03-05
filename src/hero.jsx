@@ -43,6 +43,7 @@ export default function Hero() {
           <div className="pfp"></div>
           <h1>SHREYAS GADHE</h1>
           <p className="desc">Front-End Engineer</p>
+          <div className="nav"></div>
         </div>
       </div>
     </>

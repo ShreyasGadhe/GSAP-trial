@@ -7,7 +7,8 @@ body {
 .hero {
   margin: 0;
   background-color: rgb(17, 13, 13);
-  height: 100vh;
+  height: auto;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
 
@@ -64,6 +65,11 @@ body {
   align-self: center;
   font-size: 40px;
   color: antiquewhite;
+  font-family: "Outfit", sans-serif;
+  font-weight: 900;
+}
+.info p {
+  font-family: "Outfit", sans-serif;
 }
 .world {
   background-color: rgb(57, 51, 51);
