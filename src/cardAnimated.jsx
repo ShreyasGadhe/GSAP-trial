@@ -21,7 +21,7 @@ export default function CardAnimatedLogo({ logoSRC, text }) {
     tlRef.current.to(
       logoRef.current,
       {
-        left: 50,
+        left: 70,
         top: -10,
         opacity: 50,
         rotate: 360,
