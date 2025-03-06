@@ -40,7 +40,7 @@ export default function Hero() {
             <a href="https://github.com/shreyasgadhe">
               <Github color="antiquewhite" />
             </a>
-            <a href="https://www.linkedin.com/in/shreyasgadhe/">
+            <a href="https://www.linkedin.com/in/shreyas-gadhe/">
               <Linkedin color="antiquewhite" />
             </a>
             <a href="mailto:gadheshreyas@gmail.com">
@@ -54,7 +54,7 @@ export default function Hero() {
         </div>
         <CardAnimatedLogo
           text="Blender Projects"
-          logoSRC="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png"
+          logoSRC="https://png.pngtree.com/png-vector/20230418/ourmid/pngtree-donut-afternoon-tea-dessert-shop-transparent-png-image_6708371.png"
         />
       </div>
     </>

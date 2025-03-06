@@ -92,7 +92,7 @@ body {
   z-index: 0;
 }
 
-.card {
+.container {
   z-index: 1;
   height: 30vh;
   width: 20vw;
@@ -101,7 +101,7 @@ body {
   backdrop-filter: blur(10px);
   border: 2px solid rgb(125, 119, 119);
 }
-.card:hover {
+.container:hover {
   scale: 1.1;
 }
 
