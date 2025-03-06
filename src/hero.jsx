@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import "./index.css";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import CardAnimatedLogo from "./cardAnimated";
 import {
   Github,
   Linkedin,
@@ -28,6 +29,12 @@ export default function Hero() {
       <div onMouseMove={handleMouseMove} className="hero">
         <div className="glass"></div>
         <div ref={cursorRef} className="hero-cursor"></div>
+
+        <CardAnimatedLogo
+          text="Web Projects"
+          logoSRC="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png"
+        />
+
         <div className="info">
           <div className="links">
             <a href="https://github.com/shreyasgadhe">
@@ -45,6 +52,10 @@ export default function Hero() {
           <p className="desc">Front-End Engineer</p>
           <div className="nav"></div>
         </div>
+        <CardAnimatedLogo
+          text="Blender Projects"
+          logoSRC="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png"
+        />
       </div>
     </>
   );
