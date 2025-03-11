@@ -1,0 +1,31 @@
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+const loader = new THREE.GLTFLoader();
+loader.load('model.glb', function(gltf) {
+    scene.add(gltf.scene);
+});
