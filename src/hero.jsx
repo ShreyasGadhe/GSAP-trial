@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import "./index.css";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import BlenderSection from "./blenderSection";
 import CardAnimatedLogo from "./cardAnimated";
 import {
   Github,
@@ -14,8 +15,9 @@ import {
   Terminal,
 } from "lucide-react";
 
-export default function Hero() {
+export default function App() {
   const cursorRef = useRef();
+  const blenderSectionRef = useRef();
 
   const handleMouseMove = (e) => {
     gsap.to(cursorRef.current, {
@@ -53,10 +55,15 @@ export default function Hero() {
           <div className="nav"></div>
         </div>
         <CardAnimatedLogo
+          onClick={() => {
+            console.log(blenderSectionRef.current);
+            blenderSectionRef.current.scrollIntoView({ behavior: "smooth" });
+          }}
           text="Blender Projects"
           logoSRC="https://png.pngtree.com/png-vector/20230418/ourmid/pngtree-donut-afternoon-tea-dessert-shop-transparent-png-image_6708371.png"
         />
       </div>
+      <BlenderSection anyref={blenderSectionRef} />
     </>
   );
 }

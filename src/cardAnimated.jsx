@@ -3,7 +3,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import "./cardAnimated.css";
 
-export default function CardAnimatedLogo({ logoSRC, text }) {
+export default function CardAnimatedLogo({ logoSRC, text, onClick }) {
   const cardRef = useRef();
   const logoRef = useRef();
   const textRef = useRef();
@@ -54,6 +54,7 @@ export default function CardAnimatedLogo({ logoSRC, text }) {
   // change the class of div to something other than card
   return (
     <div
+      onClick={onClick}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       ref={cardRef}
