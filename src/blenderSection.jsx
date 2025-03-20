@@ -1,5 +1,5 @@
 import React from "react";
-import { useRef } from "react";
+// import { useRef } from "react";
 import GSAP from "gsap";
 
 import Card from "./card";

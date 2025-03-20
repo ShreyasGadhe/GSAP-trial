@@ -1,8 +1,9 @@
 import React, { useRef } from "react";
 import "./index.css";
 import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
+// import { useGSAP } from "@gsap/react";
 import BlenderSection from "./blenderSection";
+import WebSection from "./websection";
 import CardAnimatedLogo from "./cardAnimated";
 import {
   Github,
@@ -18,6 +19,7 @@ import {
 export default function App() {
   const cursorRef = useRef();
   const blenderSectionRef = useRef();
+  const WebSectionRef = useRef();
 
   const handleMouseMove = (e) => {
     gsap.to(cursorRef.current, {
@@ -33,6 +35,10 @@ export default function App() {
         <div ref={cursorRef} className="hero-cursor"></div>
 
         <CardAnimatedLogo
+          onClick={() => {
+            console.log(WebSectionRef.current);
+            WebSectionRef.current.scrollIntoView({ behavior: "smooth" });
+          }}
           text="Web Projects"
           logoSRC="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png"
         />
@@ -63,6 +69,7 @@ export default function App() {
           logoSRC="https://png.pngtree.com/png-vector/20230418/ourmid/pngtree-donut-afternoon-tea-dessert-shop-transparent-png-image_6708371.png"
         />
       </div>
+      <WebSection anyref={WebSectionRef} />
       <BlenderSection anyref={blenderSectionRef} />
     </>
   );

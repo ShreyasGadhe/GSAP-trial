@@ -120,4 +120,14 @@ body {
   right: 0;
   z-index: 4;
   height: 180px;
+  opacity: 60%;
+}
+
+.web {
+  background-color: rgb(6, 7, 40);
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
 }
